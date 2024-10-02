@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from src.rag_system import RagSystem
 
 app = FastAPI()
-rag_system = RagSystem("./documents", host="http://chnaaam.com:11434")
+rag_system = RagSystem("./documents", host="http://fews.site:11434")
 
 # Enable CORS
 app.add_middleware(

@@ -100,9 +100,3 @@ class RagSystem:
             yield r["message"]["content"]
 
 
-if __name__ == "__main__":
-    rag_system = RagSystem("../documents", host="http://chnaaam.com:11434")
-    response = rag_system("5G Y틴 요금제는 얼마야?")
-
-    for r in response:
-        print(r, end="")
